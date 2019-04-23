@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background1"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:layout_width="316dp"
+        android:layout_height="161dp"
+        android:layout_centerInParent="true"
+        android:alpha="0.6"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="The Reading Recommendation app for people to read an interesting articles. It allows the user to have a notification about the chosen topic to read. Also, there is an achievement page show the user every time when ticked the article that read, the user can have a new star."
+            android:textColor="@color/colorPrimary"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="131dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="160dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Hello (username)"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:text="@string/start"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

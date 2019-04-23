@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Reading Recommendation</string>
+    <string name="start">Start</string>
+    <string name="title_activity_sign_in">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="email_address">Email Address</string>
+    <string name="title_activity_sign_up">Sign up</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
+    <string name="sign_in">sign in</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="title_activity_education">EducationActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="education">Education</string>
+    <string name="History">History</string>
+    <string name="health">Health</string>
+    <string name="psychology">Psychology</string>
+    <string name="career_development">Career Development</string>
+    <string name="technology">technology</string>
+    <string name="general">General</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="privacy">Privacy</string>
+    <string name="articles_topics">Articles Topics</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="about">About</string>
+    <string name="award">Award</string>
+</resources>
