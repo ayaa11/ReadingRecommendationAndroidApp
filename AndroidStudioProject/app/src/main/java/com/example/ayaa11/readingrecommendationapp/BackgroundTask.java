@@ -2,6 +2,7 @@ package com.example.ayaa11.readingrecommendationapp;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
@@ -54,27 +55,26 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
 
                 OutputStream OS = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
-                String data = URLEncoder.encode("name","UTF-8") +"= "+ URLEncoder.encode(username, "UTF-8")+"&" +
-                        URLEncoder.encode("email","UTF-8") +"="+ URLEncoder.encode(email, "UTF-8")+"&" +
-                        URLEncoder.encode("password","UTF-8") +"="+ URLEncoder.encode(password, "UTF-8")+"&" +
+                String data = URLEncoder.encode("name","UTF-8") +"="+ URLEncoder.encode(username, "UTF-8") + "&" +
+                        URLEncoder.encode("email","UTF-8") +"="+ URLEncoder.encode(email, "UTF-8") + "&" +
+                        URLEncoder.encode("password","UTF-8") +"="+ URLEncoder.encode(password, "UTF-8") + "&" +
                         URLEncoder.encode("co_password","UTF-8") +"="+ URLEncoder.encode(co_password, "UTF-8");
                 bufferedWriter.write(data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
                 OS.close();
-
                 InputStream IS = httpURLConnection.getInputStream();
                 IS.close();
-//                httpURLConnection.connect();
+                //httpURLConnection.connect();
                 httpURLConnection.disconnect();
-
                 return "Registration Success...";
-            } catch (MalformedURLException e){
+            } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+
         else if(method.equals("login"))
         {
             String login_email = params[1];
@@ -85,30 +85,29 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
                 HttpURLConnection httpURLConnection= (HttpURLConnection)url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
-//                httpURLConnection.setDoInput(true);
+                httpURLConnection.setDoInput(true);
 
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-                String data = URLEncoder.encode("login_email","UTF-8") +"="+ URLEncoder.encode(login_email, "UTF-8")+"&" +
+                String data = URLEncoder.encode("login_email","UTF-8") +"="+ URLEncoder.encode(login_email, "UTF-8") + "&" +
                         URLEncoder.encode("login_password","UTF-8") +"="+ URLEncoder.encode(login_password, "UTF-8");
+
                 bufferedWriter.write(data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
                 outputStream.close();
-
                 InputStream inputStream = httpURLConnection.getInputStream();
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
                 String response = "";
                 String line = "";
-                while ((line = bufferedReader.readLine()) !=null)
+                while ((line = bufferedReader.readLine())!=null)
                 {
-                    response += line;
+                    response+= line;
                 }
                 bufferedReader.close();
                 inputStream.close();
                 httpURLConnection.disconnect();
                 return response;
-
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {

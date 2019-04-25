@@ -37,4 +37,65 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:onClick="title1"
+        android:text="Air Quality: 4 Causes of Lung Cancer That Aren't Smoking"
+        android:textColor="@color/colorAccent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox1"
+        android:layout_centerHorizontal="true"
+        android:onClick="title2"
+        android:textColor="@color/colorAccent"
+        android:text="Colon Cancer: Which Colon Cancer Test Is Right For You?" />
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox2"
+        android:layout_centerHorizontal="true"
+        android:onClick="title3"
+        android:textColor="@color/colorAccent"
+        android:text="Diabetes: How to Recognize, Prevent or Reverse Prediabetes" />
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox3"
+        android:layout_centerHorizontal="true"
+        android:onClick="title4"
+        android:textColor="@color/colorAccent"
+        android:text="Dietary Supplements: 5 Things You Need To Know About Supplements " />
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox4"
+        android:layout_centerHorizontal="true"
+        android:onClick="title5"
+        android:textColor="@color/colorAccent"
+        android:text="Healthy Eating: The Beginner’s Guide on How to Eat Healthy and Stick to It" />
+
+    <ImageButton
+        android:id="@+id/imageBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="25dp"
+        app:srcCompat="@drawable/ic_back_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
 </RelativeLayout>

@@ -37,4 +37,65 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:onClick="title1"
+        android:text="Strategies for Teaching ADHD Students At Home"
+        android:textColor="@color/colorAccent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox1"
+        android:layout_centerHorizontal="true"
+        android:onClick="title2"
+        android:textColor="@color/colorAccent"
+        android:text="Constructive Ideas for Teaching Addition Skills" />
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox2"
+        android:layout_centerHorizontal="true"
+        android:onClick="title3"
+        android:textColor="@color/colorAccent"
+        android:text="Using Metacognition to Reframe our Thinking about Learning Styles" />
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox3"
+        android:layout_centerHorizontal="true"
+        android:onClick="title4"
+        android:textColor="@color/colorAccent"
+        android:text="An Activity That Promotes Engagement with Required Readings, Even in Large Classes" />
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox4"
+        android:layout_centerHorizontal="true"
+        android:onClick="title5"
+        android:textColor="@color/colorAccent"
+        android:text="Towards a ‘Positive U’" />
+
+    <ImageButton
+        android:id="@+id/imageBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="25dp"
+        app:srcCompat="@drawable/ic_back_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
 </RelativeLayout>

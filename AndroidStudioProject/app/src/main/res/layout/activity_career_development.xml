@@ -38,4 +38,65 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:onClick="title1"
+        android:text="The changing work force"
+        android:textColor="@color/colorAccent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox1"
+        android:layout_centerHorizontal="true"
+        android:onClick="title2"
+        android:textColor="@color/colorAccent"
+        android:text="5 Tips to Improve Your Career Development " />
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox2"
+        android:layout_centerHorizontal="true"
+        android:onClick="title3"
+        android:textColor="@color/colorAccent"
+        android:text="Understanding The Teamwork Definition In Relationships " />
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox3"
+        android:layout_centerHorizontal="true"
+        android:onClick="title4"
+        android:textColor="@color/colorAccent"
+        android:text="7 Tips To Help You Improve Your Teamwork Skills " />
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="344dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/checkBox4"
+        android:layout_centerHorizontal="true"
+        android:onClick="title5"
+        android:textColor="@color/colorAccent"
+        android:text="Setting Healthy Career Goals And Working Toward Them" />
+
+    <ImageButton
+        android:id="@+id/imageBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="25dp"
+        app:srcCompat="@drawable/ic_back_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
 </RelativeLayout>

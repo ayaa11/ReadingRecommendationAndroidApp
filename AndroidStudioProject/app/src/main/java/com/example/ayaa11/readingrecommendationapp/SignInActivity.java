@@ -20,9 +20,9 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     public void userLogin(View view) {
-//        login_email = ET_USER_EMAIL.getText().toString();
-//        login_password = ET_USER_PASS.getText().toString();
-//
+        login_email = ET_USER_EMAIL.getText().toString();
+        login_password = ET_USER_PASS.getText().toString();
+
 //        String method = "login";
 //        BackgroundTask backgroundTask = new BackgroundTask(this);
 //        backgroundTask.execute(method,login_email,login_password);
